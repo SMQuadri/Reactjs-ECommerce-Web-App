@@ -1,0 +1,6 @@
+.home {
+  max-width: 100vw;
+  height: 100%;
+  /* background: linear-gradient(to right, black, rgb(60, 102, 102)); */
+  background: linear-gradient(to right, rgb(155, 1, 1), rgb(240, 12, 12));
+}

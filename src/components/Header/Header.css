@@ -1,0 +1,234 @@
+.header {
+  max-width: 100vw;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgb(221, 221, 221), white);
+  box-shadow: 0 2px 2px rgb(185, 185, 185);
+  position: sticky;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__logo {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  /* flex: 0.2; */
+}
+
+.header__nav {
+  display: flex;
+  /* width: 60%; */
+  /* justify-content: space-between; */
+  align-items: center;
+  /* flex: 0.8; */
+}
+
+.header__navItems {
+  /* padding-right: 35px; */
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  padding: 6px 13px;
+  margin-right: 30px;
+  border-radius: 12px;
+  transition: 0.5s all ease;
+}
+
+.header__navItems:hover {
+  /* background-color: rgb(27, 27, 27); */
+  background-color: rgb(221, 4, 4);
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(224, 6, 6);
+  text-shadow: 0 0 2px rgb(219, 219, 219);
+}
+
+.header__navRight {
+  display: flex;
+  align-items: center;
+}
+
+.header__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.header__hello {
+  color: rgb(15, 15, 15);
+  font-size: 14px;
+}
+
+.header__mail {
+  font-size: 12px;
+  color: rgb(65, 65, 65);
+}
+
+.header__navRightItems {
+  color: rgb(196, 0, 0);
+  margin-right: 25px;
+  /* padding: 10px 5px; */
+  transition: all 0.5s ease;
+  font-size: 14px;
+}
+
+.header__navRightItems:hover {
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
+.header__cart {
+  color: black;
+  margin-top: 7px;
+}
+
+.header__cartItems {
+  background-color: rgb(221, 3, 3);
+  color: white;
+  font-size: 12px;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin-top: -23px;
+  margin-left: -6px;
+  z-index: -1;
+}
+
+.header2 {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 50px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__user {
+    display: none;
+  }
+
+  .header__logo {
+    width: 100px;
+    height: 55px;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(43, 43, 43), rgb(49, 116, 116));
+    height: 100vh;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    right: 100%;
+    /* transform: translateX(-100%); */
+    transition: 850ms;
+  }
+
+  .header2.active {
+    right: 0;
+    /* transform: translateX(100%); */
+    transition: 350ms;
+  }
+
+  .header2__close {
+    color: rgb(31, 31, 31);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .header2__nav {
+    /* position: absolute;
+    margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .header2__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, rgb(175, 175, 175), rgb(233, 233, 233));
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+
+  .header2__hello {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .header2__mail {
+    color: rgb(61, 61, 61);
+    font-size: 13px;
+  }
+
+  .header2__navSign {
+    background: linear-gradient(to right, rgb(43, 43, 43), rgb(49, 116, 116));
+    /* background: linear-gradient(to right, rgb(131, 0, 0), rgb(219, 0, 0)); */
+    color: rgb(231, 231, 231);
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.5 ease;
+  }
+
+  .header2__navSign:hover {
+    background: linear-gradient(to right,rgb(160, 160, 160), rgb(236, 236, 236));
+    color: black;
+  }
+
+  .header2__navItem {
+    margin-top: 40px;
+  }
+
+  .header2__navItems {
+    position: relative;
+    /* background-color: black; */
+    font-size: 18px;
+    color: rgb(224, 224, 224);
+    font-weight: 500;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 1px solid rgb(209, 209, 209);
+  }
+
+  .header2__navItems:hover {
+    background: linear-gradient(to right, rgb(156, 156, 156), rgb(219, 219, 219));
+    color: rgb(26, 26, 26);
+  }
+}
