@@ -1,0 +1,174 @@
+.login {
+  background-image: url('./wallpaper.jpg');
+  max-width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  color: white;
+}
+
+.login__page {
+  box-shadow: 15px 15px 15px black, 5px 5px 5px black;
+  /* border: 1px solid rgb(68, 68, 68); */
+  width: 400px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__logo {
+  background-color: #fff;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.login__head1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 13px;
+  margin-bottom: 9px;
+}
+
+.login__page > form {
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__email , .login__password {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.login__input {
+  margin-bottom: 15px;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.login__button {
+  background: linear-gradient(to right, rgb(241, 241, 241), rgb(252, 125, 146));
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  margin-top: 10px;
+  /* margin-bottom: 0px; */
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.login__button:hover {
+  background: linear-gradient(to left, rgb(241, 241, 241), rgb(240, 122, 141));
+}
+
+.login__head2 {
+  /* margin-top: 2px; */
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(216, 214, 214);
+}
+
+.login__head3 {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(216, 214, 214);
+}
+
+.underlineHead3 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    background-image: url(./wallpaper2.jpg);
+  }
+
+  .login__page {
+    box-shadow: 15px 15px 15px rgb(59, 59, 59), 5px 5px 5px rgb(54, 54, 54);
+    width: 240px;
+    height: 480px;
+    margin-top: 0;
+    margin-top: 5px;
+  }
+
+  .login__logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .login__head1 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  .login__email , .login__password  {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .login__input {
+    margin-bottom: 11px;
+    width: 220px;
+    height: 25px;
+    font-size: 13px;
+    border-radius: 14px;
+  }
+
+  .login__button {
+    font-size: 13px;
+    width: 150px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .login__head2 {
+    width: 85%;
+    font-size: 11px;
+  }
+  
+  .login__head3 {
+    width: 85%;
+    font-size: 11px;
+    margin-top: 0px;
+  }
+}
