@@ -41,15 +41,16 @@ Run the above commands if your project requires material UI components.
 12) Create a new javascript file in the src folder of your react project naming 'firebase.js'. Export the authentication and database instances by using the firebase config snippet keys copied in the previous step. Use these exports in your project wherever you require them for authentication and realtime database creation and manipulation purposes.
 13) To avoid the headache of prop-drilling you can use either React's context API or Redux as per your requirement and convenience. (In this project I used React's Context API)
 14) Also, in your firebase project, enable the required sign-in method for the authentication your project uses.
-15) After the completion of your project, the next step is to deploy your project to production. We can do this using firebase hosting.
-16) Open up the terminal of your IDE and run the command 'firebase login' command if this is your first time hosting an app on firebase. Do the default login steps and enable the scripts' access rights through your Windows Powershell.
-17) Then run the command 'firebase init' to which creates and adds a firebase.json file in the root of your project. It is also required to deploy the assets used by your project with the firebase CLI.
-18) Navigate to the hosting method from the options generated on running the 'firebase init' command amd press 'Spacebar' on your keyboard to select the option and then press enter.
-19) Then from the options given further, select 'use an existing project'. And then select your firebase project.
-20) In the next step type the 'build' command in your terminal and then type 'Y' to configure the app as an SPA.
-21) Run the following command in the next step;
+15) If your project requires payment processes (dummy payments in my project), then integrate any payment gateway API in your project. (I used stripe in my project).
+16) After the completion of your project, the next step is to deploy your project to production. We can do this using firebase hosting.
+17) Open up the terminal of your IDE and run the command 'firebase login' command if this is your first time hosting an app on firebase. Do the default login steps and enable the scripts' access rights through your Windows Powershell.
+18) Then run the command 'firebase init' to which creates and adds a firebase.json file in the root of your project. It is also required to deploy the assets used by your project with the firebase CLI.
+19) Navigate to the hosting method from the options generated on running the 'firebase init' command amd press 'Spacebar' on your keyboard to select the option and then press enter.
+20) Then from the options given further, select 'use an existing project'. And then select your firebase project.
+21) In the next step type the 'build' command in your terminal and then type 'Y' to configure the app as an SPA.
+22) Run the following command in the next step;
     npm run build
-22) On execution of the previous command, it will generate an optimized production build version of your entire app project in the form of a folder named 'build' in your root directory.
-23) The final step is to run 'firebase deploy' command and on execution of it you will get an http link of your deployed app.
-24) You can also get the link of your deployed app from your firebase project.
-25) In the meanwhile, if you ever change any bit of code later on, you need to run the 'npm run build' command again.
+23) On execution of the previous command, it will generate an optimized production build version of your entire app project in the form of a folder named 'build' in your root directory.
+24) The final step is to run 'firebase deploy' command and on execution of it you will get an http link of your deployed app.
+25) You can also get the link of your deployed app from your firebase project.
+26) In the meanwhile, if you ever change any bit of code later on, you need to run the 'npm run build' command again.
