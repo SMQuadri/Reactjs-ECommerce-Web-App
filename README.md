@@ -1,4 +1,4 @@
-# Nike-Shoes-ECommerce-Site
+# Nike-Shoes-ECommerce-Web-App
 
 ## SPA link : https://nike-10001.web.app/
 
