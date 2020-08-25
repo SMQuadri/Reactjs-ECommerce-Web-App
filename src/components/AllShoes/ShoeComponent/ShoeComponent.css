@@ -1,0 +1,255 @@
+.shoeComponent {
+  width: 300px;
+  height: 500px;
+  border: 1px solid rgb(212, 212, 212);
+  box-shadow: 5px 5px 5px rgb(179, 179, 179);
+  margin-left: 25px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoeComponent > img {
+  width: 300px;
+  height: 300px;
+}
+
+.shoeComponent__name1 {
+  background: linear-gradient(to right, rgb(211, 210, 210), rgb(236, 143, 143));
+  text-align: center;
+  padding: 7px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* .shoeComponent__name2 {
+  background: linear-gradient(to right, rgb(211, 210, 210), rgb(236, 143, 143));
+  text-align: center;
+  padding: 7px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.shoeComponent__name3 {
+  background: linear-gradient(to right, rgb(211, 210, 210), rgb(236, 143, 143));
+  text-align: center;
+  padding: 7px 0;
+  font-size: 20px;
+  font-weight: 500;
+} */
+
+.shoeComponent__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.shoeComponent__before {
+  width: 50%;
+  border-right: 1px solid rgb(175, 175, 175);
+  color: rgb(54, 54, 54);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shoeComponent__beforePrice {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.shoeComponent__after {
+  width: 50%;
+  text-align: right;
+  color: rgb(54, 54, 54);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shoeComponent__afterPrice {
+  color: rgb(3, 161, 3);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.shoeComponent__category {
+  color: rgb(109, 109, 109);
+  margin: 7px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shoeComponent__add {
+  background: linear-gradient(to right, black, darkslategray);
+  color: rgb(221, 221, 221);
+  min-width: 91%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.shoeComponent__add:hover {
+  background: white;
+  color: black;
+}
+
+.oneMore {
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(to right, black, darkslategray);
+  color: rgb(221, 221, 221);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 6px 7px;
+  border-radius: 7px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s ease; */
+}
+
+/* .oneMore:hover {
+  background: white;
+  color: black;
+} */
+
+.oneMore > span {
+  font-size: 18px;
+  margin-right: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .shoeComponent {
+    width: 200px;
+    height: 340px;
+    /* margin-left: 25px;
+    margin-bottom: 55px; */
+    /* margin-left: 15px; */
+    /* margin-left: 10px; */
+    margin-bottom: 40px;
+  }
+  
+  .shoeComponent > img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .shoeComponent__name1 {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+
+  .shoeComponent__price {
+    padding: 4px 8px;
+  }
+  
+  .shoeComponent__before {
+    font-size: 12px;
+  }
+  
+  .shoeComponent__beforePrice {
+    font-size: 14px;
+  }
+
+  .shoeComponent__after {
+    font-size: 12px;
+  }
+  
+  .shoeComponent__afterPrice {
+    font-size: 14px;
+  }
+  
+  .shoeComponent__category {
+    margin: 4px;
+    font-size: 11px;
+  }
+
+  .shoeComponent__add {
+    min-width: 80%;
+    margin-top: 10px;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .shoeComponent__add:hover {
+    background: white;
+    color: black;
+  }
+
+  .oneMore > span {
+    font-size: 15px;
+    margin-right: 13px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+  .shoeComponent {
+    width: 200px;
+    height: 340px;
+    /* margin-left: 25px;
+    margin-bottom: 55px; */
+    /* margin-left: 15px; */
+    /* margin-left: 10px; */
+    margin-bottom: 40px;
+  }
+  
+  .shoeComponent > img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .shoeComponent__name1 {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+
+  .shoeComponent__price {
+    padding: 4px 8px;
+  }
+  
+  .shoeComponent__before {
+    font-size: 12px;
+  }
+  
+  .shoeComponent__beforePrice {
+    font-size: 14px;
+  }
+
+  .shoeComponent__after {
+    font-size: 12px;
+  }
+  
+  .shoeComponent__afterPrice {
+    font-size: 14px;
+  }
+  
+  .shoeComponent__category {
+    margin: 4px;
+    font-size: 11px;
+  }
+
+  .shoeComponent__add {
+    min-width: 80%;
+    margin-top: 10px;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .shoeComponent__add:hover {
+    background: white;
+    color: black;
+  }
+
+  .oneMore > span {
+    font-size: 15px;
+    margin-right: 13px;
+  }
+}
