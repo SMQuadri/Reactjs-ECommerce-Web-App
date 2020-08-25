@@ -70,3 +70,6 @@ This Full Stack e-commerce SPA (single page application) includes user authentic
 24) The final step is to run 'firebase deploy' command and on execution of it you will get an http link of your deployed app.
 25) You can also get the link of your deployed app from your firebase project.
 26) In the meanwhile, if you ever change any bit of code later on, you need to run the 'npm run build' command again.
+
+
+-> If you want to create your own backend using node js and express js, and database using (,say) MongoDB, then you can use Netlify, Heroku or AWS for deployment purposes instead of Firebase.
