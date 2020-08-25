@@ -1,0 +1,45 @@
+/* .men {
+  max-width: 100vw;
+  background: linear-gradient(to right, rgb(187, 0, 0), rgb(252, 27, 27));
+}
+
+.men__shoes {
+  margin-left: 20vw;
+  margin-right: 30px;
+  margin-top: 30px;
+  border: 1px solid black;
+  height: 100vh;
+} */
+
+.women {
+  max-width: 100vw;
+  height: 100%;
+  background: linear-gradient(to right, rgb(226, 151, 151), rgb(214, 211, 211));
+}
+
+.women__categories {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .women__categories {
+    margin: 0;
+    margin-top: 18px;
+    /* margin: 0 15px; */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 785px) {
+  .women__categories {
+    margin: 0;
+    margin-top: 20px;
+    /* margin: 0 15px; */
+    flex-direction: column;
+    align-items: center;
+  }
+}
